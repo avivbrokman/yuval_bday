@@ -44,7 +44,7 @@ window.REVIEWS = [
     review_count: 3,
     rating: 2,
     tagline: "You get what you pay for.",
-    text: "We were referred to Mr. Brokman by the Georgia Aquarium. His next-day delivery was impressive for such a large specimen, but the taxidermy was awful. The whale shark was overstuffed and belongs in a differnt museum in the city: MOMA.",
+    text: "We were referred to Mr. Brokman by the Georgia Aquarium. His next-day delivery was impressive for such a large specimen, but the taxidermy was awful. The whale shark was overstuffed and belongs in a different museum in the city: MoMA.",
     photo: "images/taxidermied_whale_shark.png",
     thumb: "images/taxidermied_whale_shark_thumb.png",
     photo_alt: "Whale Shark"
@@ -70,11 +70,19 @@ window.REVIEWS = [
   },
   {
     name: "Morgan Dow",
-    date: "Oct 4, 2025",
+    date: "Oct 9, 2025",
     review_count: 242,
-    rating: 2,
-    tagline: "",
-    text: "He doesn't just do taxidermy, Yuval can help with all kinds of carcass preparation."
+    rating: 4,
+    tagline: "Too many bodies in your basement?",
+    text: "I've had carcasses building up in my basement for years, and I had no idea what to do with them. Finally I found the right person for the job. Yuval Brokman can solve any carcass problem!"
+  },
+  {
+    name: "The one and only IWAN",
+    date: "Sep 29, 2025",
+    review_count: 3,
+    rating: 1,
+    tagline: "He can't find time to game with me.",
+    text: "He says he is at board meeting 24/7 or beer and bible. I want to teach him Fortnite but all he can do is turn his head and body in different directions"
   }
   // {
   //   name: "Kineret Giddens",
