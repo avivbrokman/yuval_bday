@@ -1,0 +1,218 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+
+/* h1 {
+  text-align: center;
+  margin-bottom: 30px;
+} */
+
+/* .review {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+} */
+
+.review-photo {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: block;
+}
+
+
+
+/*  */
+
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f4f4f5; 
+    margin:0; 
+    color:#222;
+}
+
+header { 
+    background:#c62828; 
+    color:white; 
+    padding:28px 24px; 
+    display:flex; 
+    align-items:center; 
+    gap:18px;
+}
+
+.logo {
+  width: 88px;
+  height: 88px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;        /* crop the image nicely */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* or "cover" if you want it to fill the box */
+}
+
+
+.title { 
+    font-size:20px; 
+    font-weight:700; 
+}
+
+.subtitle { font-size:13px; 
+    opacity:.9;
+}
+
+main { 
+    max-width:900px; 
+    margin:28px auto; 
+    padding:0 16px;
+}
+
+.card { background:white; 
+    border-radius:8px; 
+    padding:16px; 
+    box-shadow:0 1px 4px rgba(0,0,0,.06); margin-bottom:14px;
+}
+
+.meta { 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    gap:12px; 
+}
+
+.stars { 
+    color:#e3a400; 
+    font-weight:700; 
+    letter-spacing:2px; 
+}
+
+.rating-big { 
+    font-size:28px; 
+    font-weight:800; 
+    color:#222; 
+    margin-right:8px;
+}
+
+
+/* .review {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+} */
+
+.rev-name {font-weight:700;}
+
+.rev-date {
+    color:#666; 
+    font-size:13px; 
+}
+
+.review-text { 
+    margin-top:10px; 
+    line-height:1.5; 
+}
+
+.fake-btn { background:#c62828; 
+    color:white; 
+    padding:8px 12px; 
+    border-radius:6px; 
+    text-decoration:none; 
+    display:inline-block; 
+    margin-top:10px;
+}
+
+footer { 
+    text-align:center; 
+    color:#666; 
+    font-size:13px; 
+    margin:30px 0; 
+}
+
+@media (max-width:520px){ .meta{flex-direction:column; align-items:flex-start} header{padding:18px} .logo{width:64px;height:64px;font-size:16px} }
+
+/* thumbnails */
+.thumbs { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+.thumb {
+  width:96px; height:96px; object-fit:cover; border-radius:6px;
+  cursor:zoom-in; box-shadow:0 1px 3px rgba(0,0,0,.15);
+}
+
+/* Lightbox overlay */
+.lb {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.lb[aria-hidden="false"] {
+  display: flex;
+}
+
+/* This container now grows to fill most of the viewport */
+.lb-content {
+  position: relative;
+  width: 90vw;               /* force large width */
+  height: 90vh;              /* force large height */
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;             /* center the image inside */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;          /* crop if the image exceeds box */
+}
+
+.lb-content img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;       /* keep aspect ratio and scale nicely */
+  display: block;
+}
+
+.lb-content figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ddd;
+  font: 14px/1.4 system-ui, sans-serif;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.lb-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 0;
+  background: #0008;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}

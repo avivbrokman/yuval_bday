@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Yuval's 39th birthday card</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/yelp.png" alt="logo" />
+      </div>
+      <div>
+        <div class="title">Brokman Carcass Removal and Taxidermy</div>
+        <div class="subtitle">4.0  ⭐ — 7 reviews — Restoring Roadkill since 2025</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="card" style="display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div class="rating-big">4.0</div>
+          <div>
+            <div class="stars">★★★★</div>
+            <div style="color:#666;font-size:13px">7 reviews</div>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-weight:700">Open • Closes 10:00 PM</div>
+          <div style="color:#666;font-size:13px">42 Wall Street <br> Suite 2100 <br> New York, NY 10005</div>
+          <a class="fake-btn" href="#" onclick="alert('Please e-verify your carcass before review submission.'); return false;">Write a Review</a>
+        </div>
+      </div>
+
+      <div id="reviews"></div>
+
+      <!-- Load data FIRST -->
+      <script src="data.js"></script>
+
+      <!-- Then the renderer -->
+      <script src="script.js"></script>
+  </main>
+
+  <div id="lightbox" class="lb" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lb-backdrop" data-close></div>
+    <figure class="lb-content">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+      <button class="lb-close" aria-label="Close" data-close>✕</button>
+    </figure>
+  </div>
+  </body>
+</html>
