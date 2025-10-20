@@ -69,27 +69,19 @@ window.REVIEWS = [
     text: "The antlers look great over my fireplace. I give him a 2 in fun, which is more than you can say for most taxidermists."
   },
   {
-    name: "Oron Brokman",
-    date: "Oct 4, 2025",
+    name: "Morgan Dow",
+    date: "Oct 9, 2025",
     review_count: 242,
-    rating: 2,
-    tagline: "Great carcass removal, but boiled tea in the kettle",
-    text: "The antlers look great over my fireplace. I give him a 2 in fun, which is more than you can say for most taxidermists."
+    rating: 4,
+    tagline: "Too many bodies in your basement?",
+    text: "I've had carcasses building up in my basement for years, and I had no idea what to do with them. Finally I found the right person for the job. Yuval Brokman can solve any carcass problem!"
+  },
+  {
+    name: "The one and only IWAN",
+    date: "Sep 29, 2025",
+    review_count: 3,
+    rating: 1,
+    tagline: "He can't find time to game with me.",
+    text: "He says he is at board meeting 24/7 or beer and bible. I want to teach him Fortnite but all he can do is turn his head and body in different directions"
   }
-  // {
-  //   name: "Morgan Dow",
-  //   date: "Oct 9, 2025",
-  //   review_count: 242,
-  //   rating: 4,
-  //   tagline: "Too many bodies in your basement?",
-  //   text: "I've had carcasses building up in my basement for years, and I had no idea what to do with them. Finally I found the right person for the job. Yuval Brokman can solve any carcass problem!"
-  // },
-  // {
-  //   name: "The one and only IWAN",
-  //   date: "Sep 29, 2025",
-  //   review_count: 3,
-  //   rating: 1,
-  //   tagline: "He can't find time to game with me.",
-  //   text: "He says he is at board meeting 24/7 or beer and bible. I want to teach him Fortnite but all he can do is turn his head and body in different directions"
-  // }
 ];
